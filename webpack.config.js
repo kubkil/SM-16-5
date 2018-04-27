@@ -3,6 +3,7 @@ const path = require('path');
 //webpack.config.js
 module.exports = (env) => {
   return {
+    mode: env || 'production',
     entry: './src/script.js',
     output: {
       path: path.resolve(__dirname, 'build'),
